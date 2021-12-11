@@ -20,29 +20,25 @@ public class Ex5 {
 		
 		if (C == 1) {
 			C = 4.00;
-			Vf =(double) Q * C;
+			Vf = (double) Q * C;
+			System.out.printf("Total: R$ %.2f", Vf);
+		} else if (C == 2) {
+			C = 4.50;
+			Vf = (double) Q * C;
+			System.out.printf("Total: R$ %.2f", Vf);
+		} else if (C == 3) {
+			C = 5.00;
+			Vf = (double) Q * C;
+			System.out.printf("Total: R$ %.2f", Vf);
+		} else if (C == 4) {
+			C = 2.00;
+			Vf = (double) Q * C;
+			System.out.printf("Total: R$ %.2f", Vf);
+		} else if (C == 5) {
+			C = 1.50;
+			Vf = (double) Q * C;
 			System.out.printf("Total: R$ %.2f", Vf);
 		}
-			else if (C == 2) {
-				C = 4.50;
-				Vf =(double) Q * C;
-				System.out.printf("Total: R$ %.2f", Vf);
-			}
-			else if (C == 3) {
-				C = 5.00;
-				Vf =(double) Q * C;
-				System.out.printf("Total: R$ %.2f", Vf);					
-				}
-			else if (C == 4) {
-				C = 2.00;
-				Vf =(double) Q * C;
-				System.out.printf("Total: R$ %.2f", Vf);
-					}
-			else if (C == 5) {
-				C = 1.50;
-				Vf =(double) Q * C;
-			System.out.printf("Total: R$ %.2f", Vf);
-					}		
 		sc.close();
 	}
 }
