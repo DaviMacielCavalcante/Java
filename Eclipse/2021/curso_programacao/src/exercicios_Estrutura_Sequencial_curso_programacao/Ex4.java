@@ -1,4 +1,4 @@
-package Exercicios_Estrutura_Sequencial_curso_programacao;
+package exercicios_Estrutura_Sequencial_curso_programacao;
 
 import java.util.Locale;
 import java.util.Scanner;
