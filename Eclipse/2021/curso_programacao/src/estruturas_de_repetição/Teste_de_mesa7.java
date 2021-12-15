@@ -2,23 +2,19 @@ package estruturas_de_repetição;
 
 import java.util.Scanner;
 
-public class exemplo_1 {
+public class Teste_de_mesa7 {
 
 	public static void main(String[] args) {
-
+		
 		Scanner sc = new Scanner(System.in);
 		
-		int x = sc.nextInt();
-		int y = 0;
+		int x = 4;
+		int y = x + 2;
 		
-		while (x != 0) {
-			
-			y += x;	
-			x = sc.nextInt();	
-			
+		for (int i=0; i < x; i += 1) {
+			System.out.print( x + " " + y);
+			y = y + i;
 		}
-				
-			System.out.println(y);	
 		
 		sc.close();
 	}
