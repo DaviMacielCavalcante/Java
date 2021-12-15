@@ -8,17 +8,14 @@ public class Ex8 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int N, F, Fat;
-		N = sc.nextInt();
-		Fat = 0;
-		F = 0;
+		int N, F;
+		N = sc.nextInt();		
+		F = 1;	
 		
-		for (int i = 1; i < N; i += 1) {
-			F = N * i;
-			Fat = Fat + F;			
+		for (int i = 1; i <= N; i +=1 ) {			
+			F = F * i;					
 		}
-		System.out.println(Fat);
+		System.out.println(F);
 		sc.close();
 	}
-
 }
