@@ -2,7 +2,7 @@ package entitites;
 
 public class Retangulo {
 
-	public String inf;
+	
 	public double compr;
 	public double alt;
 	
@@ -18,8 +18,7 @@ public class Retangulo {
 	}
 	
 	public String toSring() {
-			return inf 
-				+ "AREA = "
+			return "AREA = "
 				+ String.format(" %.2f%n", area())
 				+ "PERIMETER = "
 				+ String.format(" %.2f%n", peri())
