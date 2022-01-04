@@ -2,41 +2,40 @@ package entitites;
 
 public class Products {
 
-	private String name;
+	String name;
 	private double price;
-	private int quantity;
+	private int quantity;	
 	
-	public Products() {
-		
+	public Products() {		
 	}
 	
 	public Products(String name, double price, int quantity) {
 		this.name = name;
 		this.price = price;
-		this.quantity = quantity; 
+		this.quantity = quantity;
 	}
-	
+
 	public Products(String name, double price) {
 		this.name = name;
 		this.price = price;		
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
+	}	
 	
 	public String getName() {
 		return name;
 	}
-	
-	public double getPrice() {
-		return this.price;
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	
+
+	public double getPrice() {
+		return price;
+	}
+
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
+
 	public int getQuantity() {
 		return quantity;
 	}
