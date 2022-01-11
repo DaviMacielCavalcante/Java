@@ -11,22 +11,23 @@ public class Ex5 {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-				
+		ContaBancaria Cb;		
 		
 		System.out.print("Enter account number: ");
 		int accNumb = sc.nextInt();			
 		System.out.print("Enter account holder: ");
 		sc.nextLine();
-		String name = sc.nextLine();		
-		ContaBancaria Cb = new ContaBancaria(name, accNumb);		
+		String name = sc.nextLine();			
 		System.out.print("Is there an initial deposit (y/n)? ");		
 		char ans = sc.next().charAt(0);		
 		if (ans == 'y'){			
 			System.out.print("Enter initial deposit value: ");
 			double accSal = sc.nextDouble();
-			Cb.setAccSal(accSal);		
+			Cb = new ContaBancaria(name, accNumb, accSal);		
+		}
+		else {
+			Cb = new ContaBancaria(name, accNumb);
 		}				
-		Cb.setAccNumb(accNumb);		
 		System.out.println();		
 		System.out.println("Account data: ");
 		System.out.println(Cb);				

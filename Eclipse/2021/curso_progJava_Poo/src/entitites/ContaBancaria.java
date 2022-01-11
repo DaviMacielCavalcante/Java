@@ -11,6 +11,12 @@ public class ContaBancaria {
 			this.name = name;			
 		}		
 		
+		public ContaBancaria(String name, int accNumb, double accSal) {
+			this.accNumb = accNumb;
+			this.name = name;
+			depoSal(accSal);
+		}		
+		
 		public void setAccNumb(int accNumb) {
 			this.accNumb = accNumb;
 		}
