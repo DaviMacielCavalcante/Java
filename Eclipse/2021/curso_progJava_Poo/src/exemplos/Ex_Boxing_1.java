@@ -1,0 +1,20 @@
+package exemplos;
+
+public class Ex_Boxing_1 {
+
+	public static void main(String[] args) {
+
+
+		int x = 20;
+		
+		Integer obj = x;
+		
+		System.out.println(obj);
+		
+		int y = obj * 2;
+		
+		System.out.println(y);
+
+	}
+
+}
