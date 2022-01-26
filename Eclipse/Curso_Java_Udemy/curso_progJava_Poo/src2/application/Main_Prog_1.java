@@ -17,12 +17,9 @@ public class Main_Prog_1 {
 	public static void main(String[] args) throws ParseException {
 
 		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);
-		
-		Product p = new Product("TV", 1000.00);		
-		OrderItem oi1 = new OrderItem(1, 1000.00, p);
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");		
+		Scanner sc = new Scanner(System.in);		
+				
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");		
 		
 		System.out.println("Enter client data: ");
 		System.out.print("NAME: ");
