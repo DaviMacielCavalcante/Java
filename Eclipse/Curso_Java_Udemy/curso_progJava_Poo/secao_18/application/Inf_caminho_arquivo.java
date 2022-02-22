@@ -15,6 +15,10 @@ public class Inf_caminho_arquivo {
 		File path = new File(fPath);
 		
 		System.out.println("getName: " + path.getName());
+		System.out.println("getParent: " + path.getParent());
+		System.out.println("getPath: " + path.getPath());
+		System.out.println("getAbsolutePath: " + path.getAbsolutePath());
+		
 
 		sc.close();
 	}
