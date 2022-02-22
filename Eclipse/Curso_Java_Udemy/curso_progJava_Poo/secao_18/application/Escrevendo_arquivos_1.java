@@ -12,7 +12,7 @@ public class Escrevendo_arquivos_1 {
 
 		String path = "C:\\teste\\out.txt";
 		
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))){
 			for (String line : lines) {
 				bw.write(line);
 				bw.newLine();
