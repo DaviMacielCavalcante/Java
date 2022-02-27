@@ -3,11 +3,11 @@ package entitites;
 import java.io.Serializable;
 
 public class Products_Ex_1 implements Serializable {	
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;	
 	
 	private String name;
 	private Integer quantity;
-	private Double price;
+	private Double price;	
 	
 	public Products_Ex_1() {
 		
@@ -42,13 +42,14 @@ public class Products_Ex_1 implements Serializable {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
+	public Double fPrice() {
+		return quantity * price;
+	}
 
 	@Override
 	public String toString() {
-		return "Products_Ex_1 [name=" + name + ", quantity=" + quantity + ", price=" + price + "]";
-	}
-	
-	
-	
+		return name + "," + String.format("%.2f", fPrice());
+	}	
 	
 }
