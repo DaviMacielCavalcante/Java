@@ -4,6 +4,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="src2"/>
 	<classpathentry kind="src" path="src3"/>
+	<classpathentry kind="src" path="secao_17"/>
 	<classpathentry kind="src" path="secao_18"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
