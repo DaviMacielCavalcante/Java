@@ -7,6 +7,9 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import model.entities.Contract;
+import model.entities.Installment;
+import model.services.ContractService;
+import model.services.PaypalService;
 
 public class Ex_1 {
 
@@ -18,19 +21,25 @@ public class Ex_1 {
 		
 		System.out.println("Enter contract data: ");
 		System.out.print("Number: ");
-		int number = sc.nextInt();
+		Integer number = sc.nextInt();
 		System.out.print("Date (dd/MM/yyyy): ");
 		sc.nextLine();
 		Date date = sdf.parse(sc.nextLine());	
 		System.out.print("Contract value: ");
-		double value = sc.nextDouble();
-		Contract contr = new Contract(number, date, value);	
+		Double value = sc.nextDouble();
+		
+		Contract contr = new Contract(number, date, value);
+		
+		ContractService cs = new ContractService(new PaypalService());
+		
 		System.out.print("Enter number of installments: ");
-		int par = sc.nextInt();		
-		contr.calcPar(date, value, par);
+		int N = sc.nextInt();		
+		cs.processContract(contr, N);
 		
 		System.out.println("Installments: ");
-		System.out.print(contr);
+		for (Installment it : contr.getInstallments()) {
+			System.out.println(it);
+		}
 
 		sc.close();
 	}
