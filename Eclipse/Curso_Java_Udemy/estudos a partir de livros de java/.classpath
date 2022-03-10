@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="entrada_saida_operadores"/>
+	<classpathentry kind="src" path="introducao_classes_objetos_metodos_strings"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
