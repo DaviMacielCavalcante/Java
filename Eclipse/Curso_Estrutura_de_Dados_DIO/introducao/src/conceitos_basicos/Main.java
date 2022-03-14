@@ -4,17 +4,17 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		No_e_encadeamento no1 = new No_e_encadeamento("Conteúdo no1");
+		No_e_encadeamento<String> no1 = new No_e_encadeamento<>("Conteúdo no1");
 		
-		No_e_encadeamento no2 = new No_e_encadeamento("Conteúdo no2");
+		No_e_encadeamento<String> no2 = new No_e_encadeamento<>("Conteúdo no2");
 		
 		no1.setProxNo(no2);
 		
-		No_e_encadeamento no3 = new No_e_encadeamento("Conteúdo no3");
+		No_e_encadeamento<String> no3 = new No_e_encadeamento<>("Conteúdo no3");
 		
 		no2.setProxNo(no3);
 		
-		No_e_encadeamento no4 = new No_e_encadeamento("Conteúdo no4");
+		No_e_encadeamento<String> no4 = new No_e_encadeamento<>("Conteúdo no4");
 		
 		no3.setProxNo(no4);
 		
