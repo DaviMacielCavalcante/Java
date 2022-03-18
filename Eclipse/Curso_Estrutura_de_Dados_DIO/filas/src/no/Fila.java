@@ -4,6 +4,10 @@ public class Fila {
 
 	private No refNoEntradaFila;	
 
+	public Fila() {
+		
+	}
+
 	public Fila(No refNoEntradaFila) {		
 		this.refNoEntradaFila = null;
 	}
@@ -24,6 +28,7 @@ public class Fila {
 					break;
 				}
 			}
+			return primeiroNo;
 		}
 		return null;
 	}
