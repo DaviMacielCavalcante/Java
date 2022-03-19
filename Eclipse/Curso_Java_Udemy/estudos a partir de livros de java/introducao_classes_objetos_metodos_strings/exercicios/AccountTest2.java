@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import exemplos.Exemplo_Account;
+import exercicios.entities.Exemplo_Account2;
 
 public class AccountTest2 {
 
@@ -13,11 +14,11 @@ public class AccountTest2 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		Exemplo_Account myAcc = new Exemplo_Account("Jane", 50.0);
-		Exemplo_Account myAcc1 = new Exemplo_Account("John", -7.53); 
+		Exemplo_Account2 myAcc = new Exemplo_Account2("Jane Green", 50.0);
+		Exemplo_Account2 myAcc1 = new Exemplo_Account2("John Blue", -7.53); 
 		
-		displayAccount(myAcc);
-		displayAccount(myAcc1);
+		System.out.printf("%s balance: $%.2f%n", myAcc.getName(), myAcc.getBalance());
+		System.out.printf("%s balance: $%.2f%n", myAcc1.getName(), myAcc1.getBalance());
 		
 		System.out.print("Enter deposit amount for account1: ");
 		double depositAmount = sc.nextDouble();
@@ -45,7 +46,7 @@ public class AccountTest2 {
 		sc.close();
 	}
 
-	public static void displayAccount(Exemplo_Account account) {
+	public static void displayAccount(Exemplo_Account2 account) {
 		System.out.printf("%s balance: $%.2f %n", account.getName(), account.getBalance());
 	}
 }
