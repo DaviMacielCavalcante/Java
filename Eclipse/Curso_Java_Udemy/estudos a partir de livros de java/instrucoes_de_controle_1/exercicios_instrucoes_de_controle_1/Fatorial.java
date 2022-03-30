@@ -24,7 +24,7 @@ public class Fatorial {
 			}
 			
 		}
-		System.out.print(" = " + f);
+		System.out.print(" = " + f);		
 		sc.close();
 	}
 
