@@ -15,7 +15,7 @@
 	<name>web_services_with_spring_boot_and_Hibernate</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.runtime.version>11</java.runtime.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
